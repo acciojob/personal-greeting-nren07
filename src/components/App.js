@@ -9,7 +9,7 @@ const App = () => {
         <lable for="nameField">Enter Your Name:</lable>
         <input onChange={(e)=>{setNameStr(e.target.value)}
           } type="text" id="nameField"></input>
-        <div>Hello {nameStr} !</div>
+        <div>Hello {nameStr}!</div>
     </div>
   )
 }
