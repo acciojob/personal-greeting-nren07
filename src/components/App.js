@@ -8,8 +8,8 @@ const App = () => {
     <div>
         <lable for="nameField">Enter Your Name:</lable>
         <input onChange={(e)=>{setNameStr(e.target.value)}
-          } type="text" id="nameField"></input>
-        <div>Hello {nameStr}!</div>
+          } type="text" id="nameField" value={nameStr}></input>
+        <div>{nameStr && "Hello " + nameStr+"!"}</div>
     </div>
   )
 }
